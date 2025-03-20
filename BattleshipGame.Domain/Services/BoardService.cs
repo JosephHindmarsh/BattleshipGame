@@ -10,7 +10,7 @@ namespace BattleshipGame.Domain.Services
             var board = new Board(size);
 
             // Initialize each cell in the board using nested loops.
-            // This explicit approach is chosen for clarity, ensuring that every cell is created.
+            // This explicit approach is chosen for clarity over a LINQ statement.
             board.Cells = new Cell[size, size];
             for (int row = 0; row < size; row++)
             {
